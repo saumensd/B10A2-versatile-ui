@@ -246,6 +246,30 @@ td {
     width: 620px;
 }
 
+details>summary {
+    padding: 4px;
+    width: 1040px;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+    background-color: rgb(51, 41, 41);
+}
+
+details>p {
+    background-color: #eeeeee;
+    padding: 4px;
+    width: 1040px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    background-color: rgb(61, 51, 51);
+}
+
+.faq-section {
+    max-width: 1040px;
+    margin: auto;
+}
+
 footer {
     background-color: rgb(29, 29, 29);
     margin-top: 50px;
@@ -325,6 +349,20 @@ footer {
         order: 6;
     }
 
+    .faq-section {
+        max-width: 300px;
+    }
+
+    details>summary {
+        width: 300px;
+    }
+
+    details>p {
+        padding: 4px;
+        width: 300px;
+
+    }
+
     .footer-div {
         width: 100%;
         display: grid;
@@ -337,9 +375,26 @@ footer {
     #first-footer-part {
         width: 100%;
     }
-    .bmi{
+
+    .bmi {
         flex-direction: column;
         align-items: center;
+    }
+    .cal-bmi{
+        text-align: center;
+    }
+    .exercise-img-div {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .exercise-img-div>img {
+        margin-left: 55px;
+    }
+    
+    .image2,
+    .image4 {
+        grid-column: span 2;
+    
     }
 
 }
