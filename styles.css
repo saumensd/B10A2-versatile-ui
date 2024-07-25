@@ -1,10 +1,345 @@
 /*  google font*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
 
 
 .inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(38, 36, 36);
+}
+
+/* shared styles */
+.habit-div-width {
+    width: 250px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.text-gray {
+    color: rgb(255, 255, 255);
+}
+
+select {
+    color: rgb(132, 119, 119);
+}
+
+.text-color-p {
+    color: rgb(132, 119, 119);
+}
+
+/* header styles */
+
+/* navbar related styles */
+input,
+select {
+    padding: 10px;
+    background-color: rgba(131, 91, 91, 0.11);
+    margin: 3px;
+    border-radius: 5px;
+}
+
+.calculate-button {
+    background-color: red;
+    padding: 9px 8px;
+    border: 1px solid red;
+    border-radius: 25px;
+    margin-top: 5px;
+}
+
+input[type="text"] {
+    color: bisque;
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.fitness-logo {
+    color: red;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.navbar,
+.banner {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#menu-img {
+    display: none;
+}
+
+#shape {
+    font-family: "Playwrite CU", cursive;
+    font-weight: 100;
+}
+
+.get-body-section {
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.get-body-div {
+    width: 520px;
+}
+
+.get-body-div>h1 {
+    font-size: 80px;
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
+.join-club {
+    background-color: red;
+    padding: 5px 10px;
+    border: 1px solid red;
+    border-radius: 25px;
+}
+
+.download-club {
+    background-color: black;
+    padding: 5px 10px;
+    border: 1px solid rgb(124, 104, 104);
+    border-radius: 25px;
+}
+
+.change-habit {
+    flex-direction: column;
+    align-items: center;
+}
+
+.exercise {
+    border: none;
+    border-radius: 100px;
+}
+
+.run-img {
+    width: 30%;
+    border-radius: 25px;
+}
+
+.run-extra {
+    background-color: rgb(118, 12, 12);
+    max-width: 1040px;
+    margin: 20px auto;
+    padding: 20px 0;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+.run-extra-text {
+    width: 400px;
+}
+
+.run-h1 {
+    font-size: xx-large;
+}
+
+.exercise-img-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1040px;
+    margin: auto;
+}
+
+.exercise-img-div>img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    object-fit: cover;
+}
+
+.image2,
+.image4 {
+    grid-column: span 2;
+
+}
+
+#table {
+    border-collapse: collapse;
+    border: 1px solid white;
+}
+
+.bmi-extra-div {
+    background-color: rgb(29, 29, 29);
+    padding: 40px 0;
+    margin: 50px 0;
+}
+
+.boder-color {
+    border: 1px solid rgb(132, 119, 119);
+}
+
+td {
+    padding: 10px;
+}
+
+.bmi {
+    max-width: 1040px;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.input-bmi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#activity {
+    grid-column: span 2;
+}
+
+.tariner-image {
+    max-width: 1040px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.tariner-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.footer-div {
+    width: 1040px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    justify-content: space-around;
+
+}
+
+#first-footer-part {
+    width: 620px;
+}
+
+footer {
+    background-color: rgb(29, 29, 29);
+    margin-top: 50px;
+}
+
+/* responsive media query */
+@media only screen and (max-width: 576px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    #menu-img {
+        display: block;
+    }
+
+    .get-body-section {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+
+    }
+
+    .get-body-div {
+        width: 440px;
+    }
+
+    .get-body-div>h1 {
+        font-size: 30px;
+    }
+
+    #exercice-img {
+        flex-direction: column;
+    }
+
+    .run-extra {
+        flex-direction: column;
+    }
+
+    .run-img {
+        width: 100%;
+    }
+
+    /* .tariner-image {
+        width: 90%;
+       grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .tariner-image > img{
+        height: 100%;
+        object-fit: cover;
+    } */
+    .mobile-none {
+        display: none;
+    }
+
+    .tariner-image {
+        max-width: 1040px;
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .tariner-image>img {
+        width: 100%;
+        height: 80%;
+        object-fit: contain;
+    }
+
+    .tariner-image img:nth-child(3) {
+        order: 3;
+    }
+
+    .tariner-image img:nth-child(6) {
+        order: 6;
+    }
+
+    .footer-div {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 300px;
+        margin: auto;
+        justify-content: space-around;
+
+    }
+
+    #first-footer-part {
+        width: 100%;
+    }
+    .bmi{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
