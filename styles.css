@@ -61,6 +61,11 @@ input[type="text"] {
     list-style: none;
     margin-right: 30px;
 }
+#home-button{
+    background-color: red;
+    padding: 4px 10px;
+    border-radius: 25px;
+}
 
 .nav-link {
     text-decoration: none;
