@@ -37,7 +37,7 @@ select {
 }
 
 .text-color-p {
-    color: rgb(116, 110, 110);
+    color: rgb(197, 181, 181);
 }
 
 .fitness-logo {
@@ -174,9 +174,13 @@ input[type="text"] {
 }
 
 /*------------------------- main styles-------------------- */
+main{
+    margin-top: 30px;
+}
 .change-habit {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .exercise {
@@ -197,6 +201,8 @@ input[type="text"] {
     gap: 40px;
     justify-content: space-around;
     border-radius: 15px;
+    box-shadow: 3px 2px 2px 2px #565353;
+
 }
 
 .run-extra-text {
@@ -212,6 +218,7 @@ input[type="text"] {
     grid-template-columns: repeat(4, 1fr);
     max-width: 1040px;
     margin: auto;
+    filter: grayscale(100%);
 
 }
 
@@ -362,6 +369,13 @@ td {
 footer {
     background-color: rgb(29, 29, 29);
     margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+hr{
+    margin: 20px auto;
+    color: rgb(116, 110, 110);
+    width: 1040px;
 }
 
 /* ------------------------------faq section styles--------------------- */
@@ -576,4 +590,7 @@ details>p {
     .run-extra {
         text-align: center;
     }
+  hr{
+    width: 100%;
+  }
 }
