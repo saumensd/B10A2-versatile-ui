@@ -23,10 +23,10 @@
         <nav class="navbar display-flex">
             <h3 class="fitness-logo">Fitness</h3>
             <ul class="nav-links display-flex">
-                <li class="nav-item"><a href="" class="nav-link text-gray">Home</a></li>
-                <li class="nav-item"><a href="" class="nav-link text-gray">Service</a></li>
-                <li class="nav-item"><a href="" class="nav-link text-gray">Contact</a></li>
-                <li class="nav-item"><a href="" class="nav-link text-gray">About</a></li>
+                <li class="nav-item"><a href="https://www.who.int/" class="nav-link text-gray">Home</a></li>
+                <li class="nav-item"><a href="https://www.who.int/" class="nav-link text-gray">Service</a></li>
+                <li class="nav-item"><a href="https://www.who.int/" class="nav-link text-gray">Contact</a></li>
+                <li class="nav-item"><a href="https://www.who.int/" class="nav-link text-gray">About</a></li>
             </ul>
             <img id="menu-img" src="./images/menu (1).png" alt="" width="20px">
         </nav>
@@ -44,19 +44,22 @@
 
             <div>
                 <div class="header-image-small-div" id="five-hundread">
-                    <p class="numbers-div">500+</p>
-                    <p>Free Workout Videos</p>
+                    <p class="numbers-div text-gray">500+</p>
+                    <p class="text-color-p">Free Workout Videos</p>
                 </div>
                 <img id="header-exercise-img" src="./images/Images 2.png" alt="">
 
                 <div class="header-image-small-div" id="three-hundread">
-                    <p class="numbers-div">350+</p>
-                    <p>Video tutorial</p>
+                    <div class="display-flex">
+                        <img src="./images/play-button.png" alt="" width="30px">
+                        <p class="numbers-div text-gray">350+</p>
+                    </div>
+                    <p class="text-color-p">Video tutorial</p>
                 </div>
             </div>
         </section>
     </header>
-    <!-- main section -->
+    <!------------------------------ main section ------------------------------------>
     <main>
         <section class="display-flex change-habit">
             <div class="text-center">
@@ -87,13 +90,15 @@
                 </div>
             </div>
         </section>
+        <!----------------------------------------------------- run extra section ----------------------------------->
         <section class="display-flex run-extra">
             <div class="run-extra-text">
                 <h1 class="text-gray run-h1">Run an Extra <br>
                     Mile Easily</h1>
                 <p class="text-color-p">We believe fitness should be accessible to everyone, everywhere, regardless of
                     income or access to a gym. With hundreds of professional workouts.</p>
-                <button class="text-gray join-now text-decoration">Join Now</button>
+                <button class=" join-now "><a class="text-gray text-decoration" href="https://www.who.int/">Join
+                        Now</a></button>
             </div>
             <img class="run-img" src="./images/run.jpg" alt="">
         </section>
@@ -103,15 +108,34 @@
                 <p class="text-color-p text-center">We believe fitness should be accessible to everyone, everywhere,
                     regardless of income or access to a gym.</p>
                 <div class="exercise-img-div">
-                    <img src="./images/exercise1.jpg" alt="">
-                    <img class="image2" src="./images/exercise2.png" alt="">
-                    <img class="mobile-none" src="./images/exercise3.png" alt="">
-                    <img class="image4" src="./images/exercise4.png" alt="">
-                    <img src="./images/exercise5.jpg" alt="">
-                    <img class="mobile-none" src="./images/exercise6.jpg" alt="">
+                    <div class="exercise-img-div-img">
+                        <img src="./images/exercise1.jpg" alt="">
+                        <p id="excercise-1" class="text-color-p">Exercise 1</p>
+                    </div>
+                    <div class="image2 exercise-img-div-img">
+                        <img src="./images/exercise2.png" alt="">
+                        <p id="excercise-2" class="text-color-p">Exercise 2</p>
+                    </div>
+                    <div class="mobile-none exercise-img-div-img">
+                        <img src="./images/exercise3.png" alt="">
+                        <p id="excercise-3" class="text-color-p">Exercise 3</p>
+                    </div>
+                    <div class="image4 exercise-img-div-img">
+                        <img src="./images/exercise4.png" alt="">
+                        <p id="excercise-4" class="text-color-p">Exercise 4</p>
+                    </div>
+                    <div class="exercise-img-div-img">
+                        <img src="./images/exercise5.jpg" alt="">
+                        <p id="excercise-5" class="text-color-p">Exercise 5</p>
+                    </div>
+                    <div class="mobile-none exercise-img-div-img">
+                        <img src="./images/exercise6.jpg" alt="">
+                        <p id="excercise-6" class="text-color-p">Exercise 6</p>
+                    </div>
                 </div>
             </div>
         </section>
+        <!--------------------------------------- bmi section and calculation ------------------------------------------>
         <section>
             <div>
                 <h1 class="text-center text-gray">BMI Calculator</h1>
@@ -147,16 +171,17 @@
                         </table>
                     </div>
                     <div>
-                        <h1 class="text-gray cal-bmi">Calculate your BMI</h1>
-                        <p class="text-color-p">We believe fitness should be accessible to everyone, <br> everywhere,
+                        <h1 class="text-gray cal-bmi text-center">Calculate your BMI</h1>
+                        <p class="text-color-p text-center" id="we-believe">We believe fitness should be accessible to
+                            everyone, everywhere,
                             regardless of income or access
                             to a gym. </p>
                         <div class="input-bmi">
                             <input type="text" placeholder="Height/cm">
-                            <input type="text" placeholder="Weight/kg">
+                            <input id="weight-kg" type="text" placeholder="Weight/kg">
                             <input type="text" placeholder="Age">
                             <select id="gender" name="gender">
-                                <option value="" disabled selected hidden>Choose Gender</option>
+                                <option value="" disabled selected hidden>Sex</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                             </select>
@@ -171,6 +196,7 @@
                 </div>
             </div>
         </section>
+        <!-------------------------------------- meet our team section --------------------------------->
         <section>
             <div class="text-center">
                 <h1 class="text-gray">Meet Our Team</h1>
@@ -187,14 +213,14 @@
                 </div>
                 <div class="all-trainer">
                     <img src="./images/trainer2.png" alt="">
-                    <div  class="trainer-name">
+                    <div class="trainer-name">
                         <h5 class="text-gray">Cameron Williamson</h5>
                         <p class="text-color-p">Trainer</p>
                     </div>
                 </div>
                 <div class="all-trainer">
                     <img src="./images/trainer3.png" alt="">
-                    <div  class="trainer-name">
+                    <div class="trainer-name">
                         <h5 class="text-gray">Darrell Steward</h5>
                         <p class="text-color-p">Trainer</p>
                     </div>
@@ -222,6 +248,7 @@
                 </div>
             </div>
         </section>
+        <!------------------------------------ faq section ---------------------------------------->
         <section class="faq-section">
             <div>
                 <h1 class="text-center text-gray">FAQ</h1>
@@ -258,24 +285,25 @@
             </div>
         </section>
     </main>
-    <!-- footer section -->
+    <!------------------------------------- footer section -------------------------------------->
     <footer>
         <div class="footer-div footer-section">
             <div id="first-footer-part">
-                <h1 class="text-gray fitness-logo">Fitness</h1>
-                <p class="text-color-p">We believe fitness should be accessible <br> to everyone, everywhere, regardless
+                <h1 class="text-gray fitness-logo footer-text-center-mobile">Fitness</h1>
+                <p class="text-color-p footer-text-center-mobile">We believe fitness should be accessible <br> to
+                    everyone, everywhere, regardless
                     of
                     income <br> or access to a gym.
                 </p>
             </div>
-            <div class="text-color-p">
+            <div class="text-color-p footer-text-center-mobile">
                 <h2 class="text-gray">Get Started</h2>
                 <p>Service</p>
                 <p>Contact Us</p>
                 <p>Affiliate Program</p>
                 <p>About Us</p>
             </div>
-            <div class="text-color-p">
+            <div class="text-color-p footer-text-center-mobile">
                 <h2 class="text-gray">Get Started</h2>
                 <p>Fitness</p>
                 <p>Platform</p>

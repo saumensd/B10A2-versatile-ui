@@ -1,8 +1,11 @@
-/*  google font*/
+/* -------------------------- google font------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
 
+body {
+    background-color: rgb(38, 36, 36);
+}
 
+/* ---------------------shared styles---------------------- */
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -10,11 +13,6 @@
     font-style: normal;
 }
 
-body {
-    background-color: rgb(38, 36, 36);
-}
-
-/* shared styles */
 .habit-div-width {
     width: 250px;
 }
@@ -39,29 +37,21 @@ select {
     color: rgb(116, 110, 110);
 }
 
-/* header styles */
-
-/* navbar related styles */
-input,
-select {
-    padding: 10px;
-    background-color: rgba(131, 91, 91, 0.11);
-    margin: 3px;
-    border-radius: 5px;
+.fitness-logo {
+    color: red;
+    font-size: x-large;
+    font-style: italic;
 }
 
-.calculate-button {
-    background-color: red;
-    padding: 9px 8px;
-    border: 1px solid red;
-    border-radius: 25px;
-    margin-top: 5px;
+.text-decoration {
+    text-decoration: none;
 }
 
 input[type="text"] {
     color: bisque;
 }
 
+/* ------------------------navbar related styles---------------------- */
 .navbar {
     justify-content: space-between;
     align-items: center;
@@ -77,12 +67,6 @@ input[type="text"] {
     font-weight: 500;
 }
 
-.fitness-logo {
-    color: red;
-    font-size: x-large;
-    font-style: italic;
-}
-
 .navbar,
 .banner {
     max-width: 1140px;
@@ -92,6 +76,12 @@ input[type="text"] {
 #menu-img {
     display: none;
 }
+
+
+
+
+/* -------header and  image small 500+ & 350+ div styles------------ */
+
 
 #shape {
     font-family: "Playwrite CU", cursive;
@@ -110,18 +100,46 @@ input[type="text"] {
 
 .get-body-div>h1 {
     font-size: 80px;
+    margin: 0;
 }
 
-.text-decoration {
-    text-decoration: none;
+.header-image-small-div {
+    text-align: center;
+    border: 1px solid bisque;
+    background-color: #bbbbbb;
+    opacity: 0.5;
+    border-radius: 5px;
 }
 
+.numbers-div {
+    font-size: x-large;
+    padding: 0;
+    margin: 0;
+}
+
+#five-hundread {
+    position: absolute;
+    width: 110px;
+    height: 80px;
+    margin-top: 70px;
+    margin-left: 190px;
+}
+
+#three-hundread {
+    position: absolute;
+    width: 110px;
+    height: 80px;
+    margin-top: -130px;
+}
+
+/* ------------header button styles---------------- */
 .join-club {
     background-color: red;
-    padding: 5px 10px;
+    padding: 8px 10px;
     border: 1px solid red;
     border-radius: 25px;
 }
+
 .join-now {
     background-color: red;
     padding: 10px 30px;
@@ -131,11 +149,12 @@ input[type="text"] {
 
 .download-club {
     background-color: black;
-    padding: 5px 10px;
+    padding: 8px 10px;
     border: 1px solid rgb(124, 104, 104);
     border-radius: 25px;
 }
 
+/*------------------------- main styles-------------------- */
 .change-habit {
     flex-direction: column;
     align-items: center;
@@ -174,9 +193,10 @@ input[type="text"] {
     grid-template-columns: repeat(4, 1fr);
     max-width: 1040px;
     margin: auto;
+
 }
 
-.exercise-img-div>img {
+.exercise-img-div>div>img {
     width: 100%;
     height: 100%;
     padding: 0;
@@ -190,9 +210,60 @@ input[type="text"] {
 
 }
 
+.exercise-img-div-img {
+    position: relative;
+}
+
+#excercise-1 {
+    position: absolute;
+    top: 80%;
+}
+
+#excercise-2 {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+
+#excercise-3 {
+    position: absolute;
+    top: 80%;
+}
+
+#excercise-4 {
+    position: absolute;
+    top: 1%;
+    left: 80%;
+}
+
+#excercise-5 {
+    position: absolute;
+    top: 75%;
+}
+
+#excercise-6 {
+    position: absolute;
+    top: 80%;
+}
+
+/* ---------------------------BMI table style------------------------------ */
+
+
+input,
+select {
+    padding: 10px;
+    background-color: rgba(131, 91, 91, 0.11);
+    margin: 3px;
+    border-radius: 5px;
+}
+
 #table {
     border-collapse: collapse;
     border: 1px solid white;
+}
+
+td {
+    padding: 10px;
 }
 
 .bmi-extra-div {
@@ -203,10 +274,6 @@ input[type="text"] {
 
 .boder-color {
     border: 1px solid rgb(132, 119, 119);
-}
-
-td {
-    padding: 10px;
 }
 
 .bmi {
@@ -221,10 +288,19 @@ td {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.calculate-button {
+    background-color: red;
+    padding: 9px 8px;
+    border: 1px solid red;
+    border-radius: 25px;
+    margin-top: 5px;
+}
+
 #activity {
     grid-column: span 2;
 }
 
+/* -------------------trainer and exercise section styles --------------------------- */
 .tariner-image {
     background-color: #403d3d;
     padding: 15px;
@@ -236,20 +312,21 @@ td {
     gap: 10px;
 }
 
-.all-trainer>img{
+.all-trainer>img {
     width: 100%;
     height: 100%;
     border-radius: 15px;
     object-fit: cover;
-  
+
 }
-.trainer-name{
+
+.trainer-name {
     position: absolute;
     margin-top: -90px;
     margin-left: 20px;
 }
 
-
+/* ----------------footer styles------------------------ */
 .footer-div {
     width: 1040px;
     display: grid;
@@ -263,6 +340,12 @@ td {
     width: 620px;
 }
 
+footer {
+    background-color: rgb(29, 29, 29);
+    margin-top: 50px;
+}
+
+/* ------------------------------faq section styles--------------------- */
 details>summary {
     padding: 4px;
     width: 1040px;
@@ -289,40 +372,7 @@ details>p {
     margin: auto;
 }
 
-footer {
-    background-color: rgb(29, 29, 29);
-    margin-top: 50px;
-}
-
-.header-image-small-div{
-    text-align: center;
-    border: 1px solid bisque;
-    background-color: #bbbbbb;
-    opacity: 0.5;
-    border-radius: 5px;
-}
-.numbers-div{
-    font-size: x-large;
-    padding: 0;
-    margin: 0;
-}
-#five-hundread{
-    position: absolute;
-    width: 110px;
-    height: 80px;
-    margin-top: 70px;
-    margin-left: 190px;
-}
-#three-hundread{
-    position: absolute;
-    width: 110px;
-    height: 80px;
-    margin-top: -130px;
-}
-
-
-
-/* responsive media query */
+/* --------------------------------------------------------------------responsive media query----------------------------------------------------------------------- */
 @media only screen and (max-width: 576px) {
 
     .nav-links {
@@ -337,16 +387,27 @@ footer {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-
-
+        margin: auto;
     }
 
     .get-body-div {
-        width: 440px;
+        width: 100%;
+        margin: auto;
+    }
+
+
+    #header-exercise-img {
+        width: 90%;
+        margin: auto;
     }
 
     .get-body-div>h1 {
         font-size: 30px;
+    }
+
+    .run-extra-text {
+        width: 100%;
+        margin: auto;
     }
 
     #exercice-img {
@@ -361,15 +422,6 @@ footer {
         width: 100%;
     }
 
-    /* .tariner-image {
-        width: 90%;
-       grid-template-columns: repeat(1, 1fr);
-       
-    }
-    .tariner-image > img{
-        height: 100%;
-        object-fit: cover;
-    } */
     .mobile-none {
         display: none;
     }
@@ -397,16 +449,19 @@ footer {
     }
 
     .faq-section {
-        max-width: 300px;
+        max-width: 90%;
+        margin: auto;
+
     }
 
     details>summary {
-        width: 300px;
+        width: 90%;
+        padding-bottom: 20px;
     }
 
     details>p {
         padding: 4px;
-        width: 300px;
+        width: 90%;
 
     }
 
@@ -423,59 +478,81 @@ footer {
         width: 100%;
     }
 
-    .bmi {
-        flex-direction: column;
-        align-items: center;
-    }
-    .cal-bmi{
-        text-align: center;
-    }
+
+
     .exercise-img-div {
         grid-template-columns: repeat(4, 1fr);
     }
-    
-    .exercise-img-div>img {
-        margin-left: 55px;
+
+    .exercise-img-div {
+        margin-left: 50px;
+        font-size: xx-small;
     }
-    
+
     .image2,
     .image4 {
         grid-column: span 2;
-    
+
     }
+
     .run-extra-text {
         margin: auto;
-        
+
     }
+
     .run-img {
         width: 90%;
         margin: auto;
     }
 
-    
-details>summary {
-    padding: 6px;;
-    height: 50px;
-}
 
-details>p {
-    padding: 6px;
-}
-    
-   
-    /* #header-exercise-img{
-    width: 60%;
-    margin-top: 550px;
-    margin-bottom: 150px;
+    details>summary {
+        padding: 6px;
+        ;
+        height: 50px;
     }
-    #five-hundread{
-    margin-left: -350px;
-    margin-top: -180px;
-}
-#three-hundread{
-    margin-left: -530px;
-    margin-bottom: -600px;
-    z-index: 1;
-} */
 
+    details>p {
+        padding: 6px;
+    }
+
+    .bmi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cal-bmi {
+        /* text-align: center; */
+        width: 100%;
+    }
+
+
+    .footer-text-center-mobile {
+        text-align: center;
+    }
+
+    #weight-kg {
+        width: 88%;
+    }
+
+    .input-bmi {
+        width: 100%;
+    }
+
+    input,
+    select {
+        width: 80%;
+    }
+
+    #activity {
+        width: 100%;
+    }
+
+    #gender {
+        width: 100%;
+    }
+
+    .run-extra {
+        text-align: center;
+    }
 }
