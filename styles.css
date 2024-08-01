@@ -123,8 +123,7 @@ input[type="text"] {
 .header-image-small-div {
     text-align: center;
     border: 1px solid bisque;
-    background-color: #bbbbbb;
-    opacity: 0.5;
+    background-color: #bbbbbb67;
     border-radius: 5px;
 }
 
